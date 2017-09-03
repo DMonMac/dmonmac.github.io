@@ -18,3 +18,15 @@
 .navbar-brand {
     font-size: 25px;
 }
+
+body {
+  color: #e4e4e4;
+  background-color: #212121;
+}
+
+.jumbotron {
+  background-image: url('././images/Keyboard.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
