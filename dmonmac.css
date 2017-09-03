@@ -9,3 +9,12 @@
     background-color: #f2f2f2;
     padding: 25px;
   }
+
+  .navbar-inverse .navbar-nav>li>a {
+      color: #9d9d9d;
+      font-size: 26px;
+  }
+
+.navbar-brand {
+    font-size: 25px;
+}
