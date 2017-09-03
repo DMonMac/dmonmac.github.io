@@ -86,12 +86,16 @@ flex-direction: column;
 /****************************************************************************/
 
 /****INSIDE THE SECTIONS' CONTAINER****/
-.name_bar {
+.name_container {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0,1);
     width: 100%;
     height: 20%;
     background-image: url(././images/NameBG.jpg);
+}
+
+.name_holder {
+  text-align: center;
 }
 
 .section_container {
