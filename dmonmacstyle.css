@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+/********************************* Universal Formats [Supposedly] *********************************/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/******************************************************************************/
+
+
+/********************************* BODY, HTML *********************************/
+
+body, html {
+  height: 100%;
+  width: 100%;
+
+}
+
+/******************************************************************************/
+
+
+/********************************* BODY *********************************/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #191919;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+display: flex;
+flex-direction: column;
+
+}
+
+/******************************************************************************/
+
+
+/*********************************CONTACT BAR*********************************/
+
+.contact_bar{
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  width: 100%;
+  background: rgba(117, 0, 0, 0.75);
+}
+
+.contact_bar a{
+    float: right; /* Float links side by side */
+    text-align: center; /* Align text */
+    width: 75px; /*Helps set up space between icons*/
+    padding: 5px 0; /* Some top and bottom padding */
+    transition: 0.3s ease; /* Add transition for hover effects */
+    color: #cccccc; /* Icon color */
+    font-size: 25px; /* Icon size */
+}
+
+  .contact_bar a:hover{
+    color: #fff; /* Add a hover color */
+}
+
+  .contact_active {
+      background-color: #4CAF50; /* Add an active/current color */
+  }
+/****************************************************************************/
+
+/********************************SECTIONS' CONTAINER**********************************/
+
+.sections_container {
+    background-color: white;
+    flex-grow: 1; /*This one fills up the space in the body*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+/****************************************************************************/
+
+/****INSIDE THE SECTIONS' CONTAINER****/
+.name_bar {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0,1);
+    width: 100%;
+    height: 20%;
+    background-image: url(././images/NameBG.jpg);
+}
+
+.section_container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+/****************************************************************************/
+
+
+/****************INSIDE THE SECTION CONTAINER************************************************************/
+
+button.section_button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  width: 100%;
+  height: auto;
+
+  background-color: #191919;
+  color: #f3f3f3;
+
+  padding: 15px 75px;
+  text-align: left;
+  font-size: 20px;
+  transition: 0.5s;
+  filter: grayscale(100%);
+
+  flex-grow: 1;
+
+}
+
+
+button.section_button.active {
+    font-size: 30px;
+    padding: 15px 100px;
+    filter: none;
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.75);
+
+}
+
+button.section_button:hover {
+    background-color: rgba(117, 0, 0, 1);
+    padding-left: 100px;
+    filter: none;
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.75);
+
+  }
+
+
+
+div.section_content {
+      display: none;
+      overflow: hidden;
+      background-color: rgb(25, 25, 25);
+      color: rgb(243, 243, 243);
+      font-size: 25px;
+      padding: 30px 100px;
+      height: 50%;
+  }
+
+  .section_content p {
+    background-color: rgba(255, 0, 0, 0.5);
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.75);
+  }
+
+
+/****************************************************************************/
+
+
+  /********************************* FOOTER *********************************/
+
+  .footer {
+    align-self: flex-end;
+    padding: 3px 0px;
+    background: rgba(117, 0, 0, 0.75);
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.75;
+    color: #cacaca;
+}
+
+  /****************************************************************************/
+
+
+
+  #who_is_this {
+
+      background-image: url('././images/Keyboard.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+
+  }
+
+  #library {
+
+      background-image: url('././images/Library.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+
+  }
+
+
+  #contact {
+
+      background-image: url('././images/Contact.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+
+  }
+
+
+  #others {
+
+      background-image: url('././images/Others.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+
+  }
