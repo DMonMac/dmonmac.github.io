@@ -39,13 +39,29 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .jumbotron h1 {
   font-size: 80px;
 }
 
+.jumbotron p {
+  font-size: 30px;
+}
+
 .img-responsive {
   border: solid;
   border-color: #e4e4e4;
+}
+
+#phrases p {
+  font-size: 20px;
+}
+
+#phrases.container-fluid {
+  background-color: #6f0f0f;
+  padding: 25px 0px;
 }
