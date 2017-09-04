@@ -57,11 +57,40 @@ body {
   border-color: #e4e4e4;
 }
 
-#phrases p {
+#gallery-rails p {
   font-size: 20px;
+  line-height: 50px;
+}
+
+#gallery-ruby p {
+  font-size: 20px;
+  line-height: 50px;
 }
 
 #phrases.container-fluid {
   background-color: #6f0f0f;
-  padding: 25px 0px;
+  padding: 20px 0px;
+}
+
+#phrases p {
+  font-size: 20px;
+}
+
+#gallery-rails {
+  background-color: #6f0f0f;
+}
+
+
+#gallery-rails.container-fluid {
+  padding: 20px 0px;
+  background-image: url('././images/Keyboard.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+#gallery-ruby.container-fluid {
+  padding: 20px 0px;
+
 }
