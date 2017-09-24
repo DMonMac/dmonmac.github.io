@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="dmonmac0.css">
   </head>
   <body>
-      <div class="tab tab-left">
+      <div class="name-plate">
         HEADER
       </div>
       <div class="tab tab-right">
@@ -20,24 +20,6 @@
       <div class="tab tab-right">
         CONTACT
       </div>
-
-
-      <!--div id="tab1">
-        HEADER
-      </div>
-      <button class="" id="tab">Back</button>
-      <div id="tab2">
-        ABOUT
-      </div>
-      <div id="tab1">
-        GALLERY
-      </div>
-      <div id="tab2">
-        CONTACT
-      </div>
-
-      <div>
-      </div-->
 
 
 
@@ -48,15 +30,17 @@
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).siblings("div").animate({width:"show"});
+            $(this).siblings("div.tab").animate({width:"show"});
             $(this).hide();
         });
 
-        $("div").click(function(){
-            $(this).animate({width:"hide"});
-            $(this).siblings("div").animate(
+        $("div.tab").click(function(){
+            var clicked = $(this);
+            //$(this).animate({width:"hide"});
+            $(this).siblings("div.tab").animate(
               {width:"hide"},
               function() {
+                clicked.removeClass("tab-left").addClass("tab-content");
                 $(this).siblings("button").show(300);
               }
             );

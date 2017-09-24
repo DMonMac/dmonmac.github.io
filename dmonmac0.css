@@ -13,8 +13,6 @@ html, body {
   -webkit-text-stroke-color: blue;
   height: 25%;
   width: 100%;
-  flex-grow: 1;
-
 }
 
 .tab-left{
@@ -23,23 +21,15 @@ html, body {
 
 .tab-right {
   float: right;
+}
+
+.name-plate {
+    height: 25%;
+    width: 100%;
 
 }
 
-#tab1, #tab2 {
-  height: 25%;
-  width: 100%;
-  background-color: black;
-  border: 2px solid red;
-}
-
-.tab_hidden {
-  display:none;
-
-}
-
-button {
-  display: none;
-  float: right;
-
+.tab-content {
+  height: 75%;
+  background-color: blue;
 }
