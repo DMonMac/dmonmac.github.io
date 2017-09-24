@@ -3,23 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="dmonmac0.css">
   </head>
   <body>
 
-      <div id="tab">
+    <div >
+    </div>
+
+
+      <div id="tab1">
         HEADER
       </div>
       <button class="" id="tab">Back</button>
-      <div id="tab">
+      <div id="tab2">
         ABOUT
       </div>
-      <div id="tab">
+      <div id="tab1">
         GALLERY
       </div>
-      <div id="tab">
+      <div id="tab2">
         CONTACT
       </div>
 
@@ -29,20 +33,25 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <script>
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).siblings("div#tab").animate({width:"show"});
+            $(this).siblings("div").animate({width:"show"});
             $(this).hide();
         });
 
-        $("div#tab").click(function(){
+        $("div").click(function(){
             $(this).animate({width:"hide"});
-            $(this).siblings("div#tab").animate({width:"hide"});
-            $(this).siblings("button").animate({width:"show"});
+            $(this).siblings("div").animate(
+              {width:"hide"},
+              function() {
+                $(this).siblings("button").show(300);
+              }
+            );
+
 
         });
       });
