@@ -1,11 +1,30 @@
 html, body {
   height: 100%;
-  color: #eee;
-  background-color: #eee;
+  color: #fff;
+  background-color: #000;
 }
 
+.tab {
+  border: 1px solid red;
+  color: #fff;
+  font-size: 20px;
+  -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: blue;
+  height: 25%;
+  width: 100%;
+  flex-grow: 1;
 
+}
 
+.tab-left{
+  clear: right;
+}
+
+.tab-right {
+  float: right;
+
+}
 
 #tab1, #tab2 {
   height: 25%;
@@ -14,10 +33,13 @@ html, body {
   border: 2px solid red;
 }
 
-#tab2 {
+.tab_hidden {
+  display:none;
 
 }
 
 button {
   display: none;
+  float: right;
+
 }
