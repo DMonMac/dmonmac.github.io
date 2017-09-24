@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+  color: blue;
+  background-color: white
+}
+
+#tab1 {
+  height: 25%;
+  background-color: red
+}
+
+#tab2  {
+  height: 25%;
+  background-color: black
+}
