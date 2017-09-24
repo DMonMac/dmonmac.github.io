@@ -9,22 +9,30 @@
   </head>
   <body>
       <div class="name-plate">
-        <h1>HEADER</h1>
+        <h1>Dianne Montemayor Macaso(DMonMac)</h1>
       </div>
 
       <div class="tab tab-right">
-        <h1>ABOUT</h1>
+        <h1>The Tech Adventurer</h1>
       </div>
       <div class="tab-content">
-        About Content
-        <button>Back</button>
+        <div>
+          <h1>The Tech Adventurer</h1>
+          <p>Hi! I'm Dianne, relentless computer meddler when not taking a break.</p>
+          <p>I'm currently in a coding bootcamp, mainly training how to create mobile and web applications, both on the front-end (what users interact with) and back-end development (the one that handles users' interactions).</p>
+          <p>Aside from coding, I do other stuff with my computer too. Here, have a look:</p>
+          <button>Back</button>
+        </div>
       </div>
 
       <div class="tab tab-left">
-        <h1>GALLERY</h1>
+        <h1>Collections</h1>
       </div>
       <div class="tab-content">
-        Gallery Content
+        <h1>Collections</h1>
+        <div>
+          <p></p>
+        </div>
         <button>Back</button>
       </div>
 
@@ -32,7 +40,7 @@
         <h1>CONTACT</h1>
       </div>
       <div class="tab-content">
-        Contact Content
+        <h1>Contact Content</h1>
         <button>Back</button>
       </div>
 
@@ -47,7 +55,7 @@
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).parent().slideUp(400, function(){
+            $(this).parents(".tab-content").slideUp(400, function(){
               $("div.tab").animate({width:"show"});
             });
 
