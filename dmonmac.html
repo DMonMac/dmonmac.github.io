@@ -8,7 +8,7 @@
   </head>
   <body>
 
-
+      <button>Back</button>
       <div id="tab">
         HEADER
       </div>
@@ -28,9 +28,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <script>
+
       $(document).ready(function(){
+        $("button").click(function(){
+            $(this).siblings("div#tab").show(1000);
+        });
+
         $("div#tab").click(function(){
-            $(this).hide();
+            $(this).hide(1000);
+            $(this).siblings("div#tab").hide(1000);
+            $(this).siblings("button").show(1000);
         });
       });
     </script>
