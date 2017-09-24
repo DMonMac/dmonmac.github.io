@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="dmonmac0.css">
   </head>
   <body>
 
-      <button>Back</button>
       <div id="tab">
         HEADER
       </div>
+      <button class="" id="tab">Back</button>
       <div id="tab">
         ABOUT
       </div>
@@ -22,22 +23,27 @@
         CONTACT
       </div>
 
+      <div>
+      </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).siblings("div#tab").show(1000);
+            $(this).siblings("div#tab").animate({width:"show"});
+            $(this).hide();
         });
 
         $("div#tab").click(function(){
-            $(this).hide(1000);
-            $(this).siblings("div#tab").hide(1000);
-            $(this).siblings("button").show(1000);
+            $(this).animate({width:"hide"});
+            $(this).siblings("div#tab").animate({width:"hide"});
+            $(this).siblings("button").animate({width:"show"});
+
         });
       });
     </script>

@@ -1,11 +1,16 @@
 html, body {
   height: 100%;
   color: #eee;
-  background-color: black
+  background-color: #eee;
 }
 
 #tab {
   height: 25%;
+  width: 100%;
   background-color: black;
   border: 2px solid red;
+}
+
+button {
+  display: none;
 }
