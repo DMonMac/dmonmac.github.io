@@ -13,6 +13,7 @@ html, body {
   -webkit-text-stroke-color: blue;
   height: 25%;
   width: 100%;
+
 }
 
 .tab-left{
@@ -30,6 +31,9 @@ html, body {
 }
 
 .tab-content {
-  height: 75%;
   background-color: blue;
+  display: none;
+  height: 75%;
+
+
 }

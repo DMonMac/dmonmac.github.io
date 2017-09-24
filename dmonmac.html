@@ -21,6 +21,9 @@
         CONTACT
       </div>
 
+      <div class="tab-content">
+        <button>Back</button>
+      </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,18 +33,17 @@
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).siblings("div.tab").animate({width:"show"});
-            $(this).hide();
+            $(this).parent().hide();
+            $("div.tab").animate({width:"show"});
+
         });
 
         $("div.tab").click(function(){
-            var clicked = $(this);
-            //$(this).animate({width:"hide"});
+            $(this).animate({width:"hide"});
             $(this).siblings("div.tab").animate(
               {width:"hide"},
               function() {
-                clicked.removeClass("tab-left").addClass("tab-content");
-                $(this).siblings("button").show(300);
+                $("div.tab-content").slideDown(300);
               }
             );
 
