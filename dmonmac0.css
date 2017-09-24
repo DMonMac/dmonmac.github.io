@@ -4,16 +4,24 @@ html, body {
   background-color: #000;
 }
 
+.name-plate {
+    height: 25%;
+    width: 100%;
+    background-color: red;
+}
+
 .tab {
+  background-color: black;
+  height: 75%;
+  width: 100%;
+  width: 100%;
+  height: 25%;
   border: 1px solid red;
   color: #fff;
   font-size: 20px;
   -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: blue;
-  height: 25%;
-  width: 100%;
-
 }
 
 .tab-left{
@@ -24,11 +32,7 @@ html, body {
   float: right;
 }
 
-.name-plate {
-    height: 25%;
-    width: 100%;
 
-}
 
 .tab-content {
   background-color: blue;

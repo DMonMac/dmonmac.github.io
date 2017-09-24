@@ -9,21 +9,35 @@
   </head>
   <body>
       <div class="name-plate">
-        HEADER
-      </div>
-      <div class="tab tab-right">
-        ABOUT
-      </div>
-      <div class="tab tab-left">
-        GALLERY
-      </div>
-      <div class="tab tab-right">
-        CONTACT
+        <h1>HEADER</h1>
       </div>
 
+      <div class="tab tab-right">
+        <h1>ABOUT</h1>
+      </div>
       <div class="tab-content">
+        About Content
         <button>Back</button>
       </div>
+
+      <div class="tab tab-left">
+        <h1>GALLERY</h1>
+      </div>
+      <div class="tab-content">
+        Gallery Content
+        <button>Back</button>
+      </div>
+
+      <div class="tab tab-right">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="tab-content">
+        Contact Content
+        <button>Back</button>
+      </div>
+
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -33,17 +47,18 @@
 
       $(document).ready(function(){
         $("button").click(function(){
-            $(this).parent().hide();
-            $("div.tab").animate({width:"show"});
+            $(this).parent().slideUp(400, function(){
+              $("div.tab").animate({width:"show"});
+            });
 
         });
 
         $("div.tab").click(function(){
-            $(this).animate({width:"hide"});
-            $(this).siblings("div.tab").animate(
+            var clicked = $(this);
+            $(this).animate({width:"hide"}).siblings("div.tab").animate(
               {width:"hide"},
               function() {
-                $("div.tab-content").slideDown(300);
+                clicked.next(".tab-content").slideDown(400);
               }
             );
 
