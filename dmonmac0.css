@@ -30,6 +30,17 @@ html, body {
   -webkit-text-stroke-color: rgb(0, 0, 255);
 }
 
+.home-button {
+  display: none;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  background-color: maroon;
+  border: 5px outset maroon;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+
 .tab-container {
   height: 75%;
   overflow-y: auto;
@@ -92,14 +103,6 @@ html, body {
   font-size: 25px;
 }
 
-.tab-content button {
-  font-family: 'Exo 2', sans-serif;
-  font-size: 20px;
-  background-color: maroon;
-  border: 5px outset maroon;
-  color: #ffffff;
-  padding: 5px 10px;
-}
 
 
 

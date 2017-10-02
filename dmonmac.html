@@ -13,6 +13,7 @@
         <div class="name-plate">
             <h1>Dianne Montemayor Macaso</h1>
             <h2>(DMonMac)</h2>
+            <button class = "home-button">Back</button>
         </div>
 
         <div class = "tab-container">
@@ -26,7 +27,7 @@
                 <p>Hi! I'm Dianne, relentless computer meddler when not taking a break.</p>
                 <p>I'm currently in a coding bootcamp, mainly training how to create mobile and web applications, both on the front-end (what users interact with) and back-end development (the one that handles users' interactions).</p>
                 <p>Check out 'The Collection'to see some of the programs I worked on.</p>
-                <button>Back</button>
+
 
                 <!--p>I do other stuff with my computer too. Here, have a look:</p>
                 <div id="myProgress">
@@ -39,12 +40,10 @@
             <div class="tab tab-left">
                 <h1>The Collection</h1>
             </div>
-
             <div class="tab-content">
                 <div class="container-fluid text-center">
                     <h1>The Collection</h1>
                     <p>These are some of the projects done during the bootcamp. If you click on their image you'll be able to see their <a href="https://github.com/DMonMac" target="_blank">GitHub documentation</a>.</p>
-                    <button>Back</button>
                 </div>
                 <!--RUBY-->
                 <div class="container text-center">
@@ -148,8 +147,6 @@
                 </div>
             </div>
 
-
-
             <div class="tab tab-right">
               <h1>The Connection</h1>
             </div>
@@ -194,17 +191,9 @@
                   </div>
                 </div>
               </div>
-              <button>Back</button>
             </div>
 
         </div>
-
-
-
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -212,10 +201,11 @@
     <script>
 
       $(document).ready(function(){
-        $("button").click(function(){
-            $(this).parents(".tab-content").fadeOut(function(){
-              $("div.tab").animate({width:"show"});
-            });
+        $(".home-button").click(function(){
+          $(".tab-content").fadeOut();
+          $(this).fadeOut(function(){
+            $("div.tab").animate({width:"show"});
+          });
 
         });
 
@@ -225,8 +215,10 @@
               {width:"hide"},
               function() {
                 clicked.next(".tab-content").fadeIn();
+                $(".home-button").fadeIn();
               }
             );
+
 
 
 
