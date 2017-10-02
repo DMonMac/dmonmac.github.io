@@ -18,23 +18,36 @@
 
         <div class = "tab-container">
 
-            <div class="tab tab-right">
+            <div class="tab tab-right" id="theAdventurer">
               <h1>The Tech Adventurer</h1>
             </div>
-            <div class="tab-content">
-              <div>
-                <h1>The Tech Adventurer</h1>
-                <p>Hi! I'm Dianne, relentless computer meddler when not taking a break.</p>
-                <p>I'm currently in a coding bootcamp, mainly training how to create mobile and web applications, both on the front-end (what users interact with) and back-end development (the one that handles users' interactions).</p>
-                <p>Check out 'The Collection'to see some of the programs I worked on.</p>
+            <div class="tab-content" >
+                <div>
+                  <h1>The Tech Adventurer</h1>
+                  <p>Hi! I'm Dianne, relentless computer meddler when not taking a break.</p>
+                  <p>I'm currently in a coding bootcamp, mainly training how to create mobile and web applications, both on the front-end (what users interact with) and back-end development (the one that handles users' interactions).</p>
+                  <p>Check out 'The Collection'to see some of the programs I worked on.</p>
+
+                  <!--p>I do other stuff with my computer too. Here, have a look:</p-->
 
 
-                <!--p>I do other stuff with my computer too. Here, have a look:</p>
-                <div id="myProgress">
-                <div id="myBar"></div>
-                </div-->
+                  <div class="col-xs-12 col-sm-12 progress-container">
 
-              </div>
+                      <div class="progress progress-striped active">
+                        <div class="progress-bar" data-percent="25%"></div>
+                      </div>
+                      <div class="progress progress-striped active">
+                        <div class="progress-bar" data-percent="50%"></div>
+                      </div>
+                      <div class="progress progress-striped active">
+                        <div class="progress-bar" data-percent="75%"></div>
+                      </div>
+
+                  </div>
+
+
+
+                </div>
             </div>
 
             <div class="tab tab-left">
@@ -155,7 +168,7 @@
               <div>
                 <p>Feel free to drop me a message here. You can also contact me through my <a href="https://www.linkedin.com/in/dianne-macaso-1a9974127/" target="_blank">LinkedIn</a></p>
               </div>
-              <div id="contact" class="container-fluid">
+              <div id="contact" class="container">
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
                     <form class="form-horizontal" role="form" method="post" action="index.php">
@@ -201,28 +214,42 @@
     <script>
 
       $(document).ready(function(){
+
+
+
         $(".home-button").click(function(){
-          $(".tab-content").fadeOut();
+          $(".tab-content").fadeOut(function(){
+            $(".progress-bar").each(function(){
+              $(this).animate({
+                  width: "0%"
+              }, 1);
+            });
+          });
           $(this).fadeOut(function(){
             $("div.tab").animate({width:"show"});
           });
 
         });
 
+        $("#theAdventurer").click(function(){
+          $(".progress-bar").each(function(){
+            $(this).animate({
+                width: $(this).attr('data-percent')
+            }, 2500);
+          });
+        })
+
         $("div.tab").click(function(){
             var clicked = $(this);
             $(this).animate({width:"hide"}).siblings("div.tab").animate(
               {width:"hide"},
               function() {
-                clicked.next(".tab-content").fadeIn();
+                clicked.next(".tab-content").fadeIn(function(){
+
+                });
                 $(".home-button").fadeIn();
               }
             );
-
-
-
-
-
 
         });
       });

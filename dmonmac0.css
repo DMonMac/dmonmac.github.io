@@ -7,12 +7,18 @@ html, body {
   font-family: 'Exo 2', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 .name-plate {
     height: 25%;
     width: 100%;
     background-color: #111;
     text-align: center;
     border: 10px ridge rgb(128, 0, 0);
+    overflow-y: scroll;
 
 }
 
@@ -44,12 +50,9 @@ html, body {
 .tab-container {
   height: 75%;
   overflow-y: auto;
+
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
 
 
 .tab {
@@ -60,6 +63,9 @@ html, body {
   border: 10px ridge rgb(128, 0, 0);
   color: #fff;
   cursor: pointer;
+  background-image: url('././images/DMonMac.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -105,17 +111,6 @@ html, body {
 
 
 
-
-#myProgress {
-    width: 100%;
-    background-color: grey;
-}
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
-}
-
 /*CAROUSEL*/
 .carousel .item {
   width:100%;
@@ -132,4 +127,11 @@ html, body {
     left: auto;
     right: auto;
     padding: 0;
+}
+
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+
 }
