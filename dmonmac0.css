@@ -30,9 +30,20 @@ html, body {
   -webkit-text-stroke-color: rgb(0, 0, 255);
 }
 
+.tab-container {
+  height: 75%;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
 .tab {
   background-color: rgb(1, 3, 10);
-  height: 25%;
+  height: 33.3333%;
   width: 100%;
   padding: 10px 20px;
   border: 10px ridge rgb(128, 0, 0);
