@@ -180,11 +180,12 @@ a:hover {
   margin: 20px 0px;
   position: relative;
   margin-left: 100px;
+  background-color: #666;
 }
 .progress.active .progress-bar {
     -webkit-transition: none !important;
     transition: none !important;
-
+    background-color: #0016b1;
 }
 
 div #codewars-badge {
