@@ -127,7 +127,7 @@ button {
 /*THE COLLECTION CAROUSEL*/
 .carousel .item {
   width:100%;
-  height: 600px;
+  height: 530px;
   overflow: hidden;
 }
 
@@ -193,25 +193,11 @@ div #codewars-badge {
 }
 
 .contact-form {
-  height: 575px;
+  height: auto;
   overflow: hidden;
   width: 100%;
 }
 
-
-@media only screen and (max-width : 827px) {
-  .contact-form {
-  height: 539px;
-  overflow: hidden;
-  width: 100%;
-}
-
-@media only screen and (max-width : 540px) {
-  .contact-form {
-  height: 480px;
-  overflow: hidden;
-  width: 100%;
-}
 
 /* Medium devices (desktops, 1200px and below) */
 @media only screen and (max-width : 1200px) {
@@ -223,12 +209,10 @@ div #codewars-badge {
   }
 
   .carousel .item {
-  width:100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width : 600px), only screen and (max-height : 710px) {
