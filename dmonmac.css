@@ -213,7 +213,7 @@ div #codewars-badge {
 
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 600px), only screen and (max-height : 710px) {
 .name-plate h1 {
   font-size: 18px;
   -webkit-text-stroke-width: .3px;
