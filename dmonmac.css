@@ -145,6 +145,10 @@ button {
     padding: 0;
 }
 
+.carousel {
+  border: 5px inset rgb(128, 0, 0);
+}
+
 
 /*THE TECH ADVENTURER*/
 #skills-panel {
