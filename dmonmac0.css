@@ -9,16 +9,6 @@ html, body {
 
 }
 
-a {
-  color: #eee;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0000ff;
-  text-decoration: none;
-}
-
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
@@ -33,21 +23,18 @@ a:hover {
     text-align: center;
     border: 10px ridge rgb(128, 0, 0);
     overflow-y: scroll;
-
+    -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+    -webkit-text-stroke-color: rgb(0, 0, 255);
 }
 
 .name-plate h1 {
   font-size: 40px;
-  -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.25px;
-  -webkit-text-stroke-color: rgb(0, 0, 255);
 }
 
 .name-plate h2 {
   font-size: 25px;
-  -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: .75px;
-  -webkit-text-stroke-color: rgb(0, 0, 255);
+  -webkit-text-stroke-width: .65px;
 }
 
 .home-button {
@@ -60,11 +47,12 @@ a:hover {
   padding: 5px 10px;
 }
 
+
+
 /*TABS*/
 .tab-container {
   height: 75%;
   overflow-y: auto;
-
 }
 
 
@@ -151,6 +139,11 @@ a:hover {
 }
 
 
+/*THE TECH ADVENTURER*/
+#skills-panel {
+  height: 225px;
+}
+
 /*PROGRESS BAR*/
 .well {
   position: relative;
@@ -195,6 +188,13 @@ div #codewars-badge {
   margin-left: 100px;
 }
 
-#codewars-badge img {
-  height: auto;
+/* Large Devices, Wide Screens (1200px and below) */
+@media only screen and (max-width : 1200px) {
+  div #codewars-badge {
+    position: relative;
+    margin: 19px;
+    height: 100%;
+    margin-left: 100px;
+  }
+
 }
