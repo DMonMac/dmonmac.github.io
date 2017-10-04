@@ -9,7 +9,7 @@ The three main sections of the webpage are as follows:
 - [The Tech Adveturer](#)
 - [The Collection](#)
 - [The Connection](#)
--
+
 #### The Tech Adventurer
 I probably should apologize for the fancy title, but I do consider myself one, so, why not? Anyway, this section basically introduces me to whoever visits that page.
 
