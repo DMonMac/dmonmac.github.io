@@ -83,8 +83,6 @@ html, body {
   overflow-y: auto;
 }
 
-
-
 .tab {
   background-color: rgb(1, 3, 10);
   height: 33.3333%;
@@ -102,12 +100,10 @@ html, body {
   background-size: cover;
 }
 
-
 .tab:hover {
   -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(0, 0, 255);
-
 }
 
 .tab h1 {
@@ -121,7 +117,6 @@ html, body {
 
 .tab-right {
   float: right;
-
 }
 
 .tab-content {
@@ -135,7 +130,6 @@ html, body {
 }
 
 .tab-content h1 {
-
   -webkit-text-stroke-width: .75px;
   padding-bottom: 30px;
 }
@@ -146,14 +140,18 @@ html, body {
 
 .tab-content p {
   font-size: 25px;
-
 }
 
 
+/*THE COLLECTION*/
 
-/*THE COLLECTION CAROUSEL*/
+/*CAROUSEL*/
+.carousel {
+  border: 5px inset rgb(128, 0, 0);
+}
+
 .carousel .item {
-  width:100%;
+  width: 100%;
   height: 530px;
   overflow: hidden;
 }
@@ -163,14 +161,10 @@ html, body {
 }
 
 .carousel .carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    padding: 0;
-}
-
-.carousel {
-  border: 5px inset rgb(128, 0, 0);
+  position: relative;
+  left: auto;
+  right: auto;
+  padding: 0;
 }
 
 
@@ -251,12 +245,14 @@ div #codewars-badge {
         font-size: 18px;
         -webkit-text-stroke-width: .3px;
         margin:0px;
+        padding: 2px;
     }
 
     .name-plate h2 {
         font-size: 10px;
         -webkit-text-stroke-width: .2px;
         margin:0px;
+        padding: 2px;
     }
 
     .home-button {
@@ -287,7 +283,6 @@ div #codewars-badge {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
 
     .tab h1 {
