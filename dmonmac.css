@@ -36,6 +36,10 @@ a:hover {
   -webkit-text-stroke-color: rgb(0, 0, 255);
   position: relative;
   display: flex;
+  background-size: cover;
+  background-image: url('./images/Plate.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .name-plate h1 {
@@ -101,13 +105,11 @@ a:hover {
   border: 10px ridge rgb(128, 0, 0);
   color: #fff;
   cursor: pointer;
-  background-image: url('././images/DMonMac.png');
   background-size: cover;
   background-attachment: fixed;
   background-image: url('./images/Carbon.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .tab:hover {
@@ -294,13 +296,11 @@ div #codewars-badge {
         border: 10px ridge rgb(128, 0, 0);
         color: #fff;
         cursor: pointer;
-        background-image: url('././images/DMonMac.png');
         background-size: cover;
         background-attachment: fixed;
         background-image: url('./images/Carbon.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .tab h1 {
