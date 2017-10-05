@@ -1,6 +1,4 @@
-##
-![DM](https://user-images.githubusercontent.com/29721601/31207332-383c1efc-a9b0-11e7-92ef-15574af3eda8.png "It's my personal emblem!")
- **_DMonMac - Dianne Macaso's Webpage_**
+## ![DM](https://user-images.githubusercontent.com/29721601/31207332-383c1efc-a9b0-11e7-92ef-15574af3eda8.png "It's my personal emblem!") **_DMonMac - Dianne Macaso's Webpage_**
 
 This is a webpage displaying my profile and some projects I worked on. Here's the link to see it: [DMonMac - Dianne Macaso's Webpage](https://dmonmac.github.io)
 
