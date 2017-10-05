@@ -1,4 +1,4 @@
-## **_DMonMac - Dianne Macaso's Webpage_**
+## ![DM](https://user-images.githubusercontent.com/29721601/31207136-f7783884-a9ae-11e7-8f34-f22504d2fc8a.png) **_DMonMac - Dianne Macaso's Webpage_**
 
 This is a webpage displaying my profile and some projects I worked on. Here's the link to see it: [DMonMac - Dianne Macaso's Webpage](https://dmonmac.github.io)
 
@@ -6,9 +6,9 @@ This is a webpage displaying my profile and some projects I worked on. Here's th
 The page opens with three tabs closed. When opened, these tabs each open a main section of the webpage. To close a tab just hit the `Back` button which will appear on the lower right part of the name plate.
 
 The three main sections of the webpage are as follows:
-- [The Tech Adveturer](#)
-- [The Collection](#)
-- [The Connection](#)
+- [The Tech Adveturer](#the-tech-adventurer)
+- [The Collection](#the-collection)
+- [The Connection](#the-connection)
 
 #### The Tech Adventurer
 I probably should apologize for the fancy title, but I do consider myself one, so, why not? Anyway, this section basically introduces me to whoever visits that page.
