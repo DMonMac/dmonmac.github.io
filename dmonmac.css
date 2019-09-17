@@ -23,6 +23,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:visited {
+  color: #2828ff;
+  text-decoration: none;
+}
 
 /*NAME PLATE*/
 .name-plate {
